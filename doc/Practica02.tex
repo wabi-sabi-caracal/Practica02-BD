@@ -44,6 +44,25 @@
 
     \section{Implementación en Java.}
     \section{Análisis de requerimientos.}
+	Se necesita crear un prototipo de un sistema que capture la información del personal del transporte de la Ciudad de México. La información capturada se administrará en archvivos .cvs y será utilizada posteriormente para poblar una base de datos. El sistema debe:
+	\begin{itemize}
+		\item Capturar información.
+		\item Consultar información.
+		\item Editar información.
+		\item Eliminar información.
+		\item Guardar y leer información en archivos .cvs .
+	\end{itemize}
+
+	Los actores del sistema son los empleados, los vehículos, las licencias y los exámenes médicos.\\ \\
+	Un empleado contiene su información básica: nombre completo, fecha de nacimiento, dirección, sexo, grado máximo de estudios y el horario en el que labora. Cada empleado conduce un vehículo, tiene una licencia de conducir válida, así como un registro de sus licencias pasadas vencidas, y un examen médico hecho hace no más de 6 meses.
+	\\ \\
+	Los vehículos tienen un identificador único, saben el tipo de combustible que necesitan y su capacidad de pasajeros. Un vehículo es operado por los empleados y puede ser operado por más de uno.
+	\\ \\
+	Una licencia contiene un identificador único, su fecha de expedición, su fecha de vencimiento y su tipo de licencia. Las licencias pertenecen a un solo empleado y pueden ser renovadas cuando llegan a su fecha de vencimiento.
+	\\ \\
+	El examen médico pertenece a un solo empleado y contiene información sobre su peso, talla, presión y estatus. Además mantiene un registro de fecha y hora en que se realizó el examen al empleado y la cédula del médico encargado.
+	\\ \\
+
     \section{Actividad.}
       \begin{enumerate}
         \item Incluir cinco diferencias entre almacenar la información utilizando un sistema de archivos a almacenarla utilizando una base de datos. Describe que es más conveniente utilizar.
