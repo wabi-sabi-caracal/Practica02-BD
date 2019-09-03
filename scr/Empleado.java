@@ -15,8 +15,7 @@ public class Empleado {
   ExamenMedico examedico;
 
   public Empleado(int idEmpleado, String nombre, String aPaterno, String aMaterno,
-                  String sexo, String estudio, String direccion, DateTimeFormatter fecha
-                  ) {
+                  String sexo, String estudio, String direccion, DateTimeFormatter fecha) {
           this.idEmpleado = idEmpleado;
           this.nombre = nombre;
           this.aPaterno = aPaterno;
