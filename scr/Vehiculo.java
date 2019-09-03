@@ -26,7 +26,7 @@ public class Vehiculo {
     Asignar fecha al vehiculo
     @param fecha a asignar al vehiculo
      */
-  public void setFecha(DateTimeFormatter peso){
+  public void setFecha(DateTimeFormatter fecha){
     this.fecha = fecha;
   }
 
