@@ -1,8 +1,8 @@
 import java.time.format.DateTimeFormatter;
 
 public class Empleado {
-  private DateTimeFormatter fecha;
-  private int salario;
+  private Date fecha;
+  private double salario;
   private int idEmpleado;
   private String nombre;
   private String aPaterno;
@@ -171,6 +171,29 @@ public class Empleado {
  */
   public void setExamed(ExamenMedico examedico){
     this.examedico = examedico;
+  }
+
+
+  /**
+   * Obtener fecha de nacimiento del empleado
+   */
+  public Date getFecha(){
+    return this.fecha;
+  }
+
+  /**
+   * Obtener salario del empleado
+   */
+  public double getSalario(){
+    return this.salario;
+  }
+
+  /**
+   * Asignar salario del empleado
+   * @param s salario del empleado
+   */
+  public void setSalario(double s){
+    this.salario = s;
   }
 
 }
