@@ -97,5 +97,4 @@ public class ExamenMedico {
   public void setFechaH(DateTime dt){
     this.fechaH = dt;
   }
-  }
 }
