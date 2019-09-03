@@ -23,50 +23,103 @@
 % Modificamos los márgenes del documento.
 \usepackage[lmargin=2cm,rmargin=2cm,top=2cm,bottom=2cm]{geometry}
 
+\title{Fundamentos de Bases de Datos \\
+       Práctica 02 \\
+       Manipulación de archivos}
+       
+\author{Teresa Becerril Torres
+        $\#$ de cuenta: $315045132$ \\
+        Miguel Ángel Torres Sánchez
+        $\#$ de cuenta: $315300442$ \\
+        Nicole Romina Traschikoff García
+        $\#$ de cuenta: $315164482$ \\
+        Tania Michelle Rubí Rojas
+        $\#$ de cuenta: $315121719$}
 
-    \title{Fundamentos de Bases de Datos \\
-        Práctica 02 \\
-        Manipulación de archivos}
+\date{02 de Septiembre del 2019}
 
+\begin{document}
+\maketitle
 
-    \author{Teresa Becerril Torres
-            $\#$ de cuenta: $315045132$ \\
-            Miguel Ángel Torres Sánchez
-            $\#$ de cuenta: $315300442$ \\
-            Nicole Romina Traschikoff García
-            $\#$ de cuenta: $315164482$ \\
-            Tania Michelle Rubí Rojas
-            $\#$ de cuenta: $315121719$}
-        \date{02 de Septiembre del 2019}
+\section{Implementación en Java.}
 
-    \begin{document}
-    \maketitle
+\section{Análisis de requerimientos.}
 
-    \section{Implementación en Java.}
-    \section{Análisis de requerimientos.}
-	Se necesita crear un prototipo de un sistema que capture la información del personal del transporte de la Ciudad de México. La información capturada se administrará en archvivos .cvs y será utilizada posteriormente para poblar una base de datos. El sistema debe:
-	\begin{itemize}
-		\item Capturar información.
-		\item Consultar información.
-		\item Editar información.
-		\item Eliminar información.
-		\item Guardar y leer información en archivos .cvs .
-	\end{itemize}
+Se necesita crear un prototipo de un sistema que capture la información del 
+personal del transporte de la Ciudad de México. La información capturada se 
+administrará en archvivos $.cvs$ y será utilizada posteriormente para poblar 
+una base de datos. El sistema debe:
 
-	Los actores del sistema son los empleados, los vehículos, las licencias y los exámenes médicos.\\ \\
-	Un empleado contiene su información básica: nombre completo, fecha de nacimiento, dirección, sexo, grado máximo de estudios y el horario en el que labora. Cada empleado conduce un vehículo, tiene una licencia de conducir válida, así como un registro de sus licencias pasadas vencidas, y un examen médico hecho hace no más de 6 meses.
-	\\ \\
-	Los vehículos tienen un identificador único, saben el tipo de combustible que necesitan y su capacidad de pasajeros. Un vehículo es operado por los empleados y puede ser operado por más de uno.
-	\\ \\
-	Una licencia contiene un identificador único, su fecha de expedición, su fecha de vencimiento y su tipo de licencia. Las licencias pertenecen a un solo empleado y pueden ser renovadas cuando llegan a su fecha de vencimiento.
-	\\ \\
-	El examen médico pertenece a un solo empleado y contiene información sobre su peso, talla, presión y estatus. Además mantiene un registro de fecha y hora en que se realizó el examen al empleado y la cédula del médico encargado.
-	\\ \\
+\begin{itemize}
+    \item Capturar información.
+	\item Consultar información.
+	\item Editar información.
+	\item Eliminar información.
+	\item Guardar y leer información en archivos .cvs .
+\end{itemize}
 
-    \section{Actividad.}
-      \begin{enumerate}
-        \item Incluir cinco diferencias entre almacenar la información utilizando un sistema de archivos a almacenarla utilizando una base de datos. Describe que es más conveniente utilizar.
-      \end{enumerate}
+Los actores del sistema son los empleados, los vehículos, las licencias y los 
+exámenes médicos.
 
+Un empleado contiene su información básica: nombre completo, fecha de 
+nacimiento, dirección, sexo, grado máximo de estudios y el horario en el que 
+labora. Cada empleado conduce un vehículo, tiene una licencia de conducir 
+válida, así como un registro de sus licencias pasadas vencidas, y un examen 
+médico hecho hace no más de 6 meses.
 
-            \end{document}
+Los vehículos tienen un identificador único, saben el tipo de combustible que 
+necesitan y su capacidad de pasajeros. Un vehículo es operado por los 
+empleados y puede ser operado por más de uno.
+
+Una licencia contiene un identificador único, su fecha de expedición, su fecha 
+de vencimiento y su tipo de licencia. Las licencias pertenecen a un solo 
+empleado y pueden ser renovadas cuando llegan a su fecha de vencimiento.
+
+El examen médico pertenece a un solo empleado y contiene información sobre 
+su peso, talla, presión y estatus. Además mantiene un registro de fecha y 
+hora en que se realizó el examen al empleado y la cédula del médico encargado.
+
+\section{Actividad.}
+
+\begin{enumerate}
+    \item Incluir cinco diferencias entre almacenar la información 
+    utilizando un sistema de archivos a almacenarla utilizando una base de 
+    datos. Describe que es más conveniente utilizar.
+
+    \textsc{Solución:} Es más conveniente utilizar una Base de Datos ya que
+    ésta nos proporciona más herramientas para manejar nuestros archivos, 
+    además de que éstos se encuentran más seguros en caso de que un error 
+    externo llegase a ocurrir. 
+
+    
+    \begin{itemize}
+        \item En el sistema de archivos es muy difícil lograr el acceso 
+        concurrente a la información; mientras que en las bases de datos 
+        es fácilmente realizable esta característica.
+
+        \item En el sistema de archivos, es muy poco práctica y eficiente 
+        la obtención, consulta y modificación de los datos a medida que 
+        aumenta la cantidad de información; mientras que las bases de datos 
+        tienen mecanismos para realizar consultas para extraer la información 
+        como esta sea requerida y de manera rápida.
+
+        \item En el sistema de archivos es difícil evitar la repetición de 
+        información, mientras que las bases de datos nos aseguran que esta 
+        repetición sea la mínima posible, lo cual implica menor consumo en 
+        disco duro.
+
+        \item En el sistema de archivos el acceso a nuestra información es 
+        poco restringido, por lo que se puede robar y copiar la información
+        facilmente; mientras que en las bases de datos se pueden definir los 
+        usuarios que tienen autorización para acceder a la información o 
+        incluso determinar que porción de información puede ver cada tipo de 
+        usuario.
+
+        \item En el sistema de archivos puede existir fácilmente la 
+        inconsistencia de datos; mientras que las bases de datos deben 
+        cumplir con ciertas restricciones de consistencia (la información 
+        no se puede perder o sufrir cambios que le hagan perder coherencia).
+    \end{itemize}
+    
+\end{enumerate}
+\end{document}

@@ -1,3 +1,4 @@
+import java.sql.Date;
 import java.time.format.DateTimeFormatter;
 
 public class ExamenMedico {
@@ -6,9 +7,9 @@ public class ExamenMedico {
   private double estatura;
   private String presion;
   private String status;
-  private DateTimeFormatter fechaH;
+  private DateTime fechaH;
 
-  public ExamenMedico(int idEmpleado, double peso, double estatuta, String presion,
+  public ExamenMedico(int idEmpleado, double peso, double estatura, String presion,
                       String status, DateTimeFormatter fechaH) {
                         this.idEmpleado = idEmpleado;
                         this.peso = peso;
@@ -83,5 +84,17 @@ public class ExamenMedico {
      */
   public void setStatus(String status){
     this.status = status;
+  }
+  /**
+   * Obtener fecha del examen
+   */
+  public DateTimeFormatter getFechaH(){
+    return this.fechaH;
+  }
+  /**
+   * Asignar fecha del examen
+   */
+  public void setFechaH(DateTime dt){
+    this.fechaH = dt;
   }
 }

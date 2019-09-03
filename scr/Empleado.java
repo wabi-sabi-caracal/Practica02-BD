@@ -90,7 +90,7 @@ public class Empleado {
      Asignar al empleado el sexo
      @param sexo del empleado
   */
-  public void setSexo(String estudio){
+  public void setSexo(String sexo){
     this.sexo = sexo;
   }
   /**
@@ -98,7 +98,7 @@ public class Empleado {
      @return estudio del empleado
  */
   public String getEstudio(){
-    return this.estudio = estudio;
+    return this.estudio;
   }
 
   /**
@@ -114,14 +114,14 @@ public class Empleado {
      @return horario del empleado
  */
   public String getHorario(){
-    return this.horario = horario;
+    return this.horario;
   }
 
   /**
      Asignar el horario  del empleado
      @param horario del empleado
  */
-  public void setHorario(String estudio){
+  public void setHorario(String horario){
     this.horario = horario;
   }
 
@@ -130,14 +130,14 @@ public class Empleado {
      @return direccion del empleado
  */
   public String getDireccion(){
-    return this.direccion = direccion;
+    return this.direccion;
   }
 
   /**
      Asignar direccion del empleado
      @param direccion del empleado
  */
-  public void setDireccion(String estudio){
+  public void setDireccion(String direccion){
     this.direccion = direccion;
   }
 
@@ -146,7 +146,7 @@ public class Empleado {
      @return licencia del empleado
  */
   public Licencia getLicencia(){
-    return this.licencia = licencia;
+    return this.licencia;
   }
 
   /**
@@ -162,7 +162,7 @@ public class Empleado {
      @return examedico del empleado
  */
   public ExamenMedico getExamed(){
-    return this.examedico = examedico;
+    return this.examedico;
   }
 
   /**
