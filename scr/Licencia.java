@@ -1,5 +1,10 @@
 import java.time.format.DateTimeFormatter;
 
+/**
+ * Clase para modelar las Licencias de los empleados del transporte
+ * de la CDMX
+ * @version 1.0 Septiembre 2019
+ */
 public class Licencia {
   private DateTimeFormatter fechaExp;
   private DateTimeFormatter vigencia;

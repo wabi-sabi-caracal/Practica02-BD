@@ -1,5 +1,11 @@
 import java.time.format.DateTimeFormatter;
 
+/**
+ * Clase para modelar los vehiculos del transporte
+ * de la CDMX
+ * @version 1.0 Septiembre 2019
+ */
+
 public class Vehiculo {
   private DateTimeFormatter fecha;
   private int idVehiculo;
