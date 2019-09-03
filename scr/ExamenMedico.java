@@ -1,6 +1,11 @@
 import java.sql.Date;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * Clase para modelar el examen medico de los empleados del transporte
+ * de la CDMX
+ * @version 1.0 Septiembre 2019
+ */
 public class ExamenMedico {
   private int idEmpleado;
   private double peso;

@@ -1,8 +1,13 @@
 import java.time.format.DateTimeFormatter;
 
+
+/**
+ * Clase para modelar a los empleados del transporte
+ * de la CDMX
+ * @version 1.0 Septiembre 2019
+ */
 public class Empleado {
   private DateTimeFormatter fecha;
-  private int salario;
   private int idEmpleado;
   private String nombre;
   private String aPaterno;
@@ -171,6 +176,13 @@ public class Empleado {
  */
   public void setExamed(ExamenMedico examedico){
     this.examedico = examedico;
+  }
+
+  public String[] data(){
+    String [] empleado = {getNombre(),getPaterno(), getMaterno(),getSexo(),
+                         getEstudio(), getHorario() , getDireccion() ,
+                         getLicencia() , getExamed()};
+    return empleado;
   }
 
 }
